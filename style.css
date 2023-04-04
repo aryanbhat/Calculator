@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&display=swap');
+@font-face {
+  font-family: "Digital";
+  src: url(./fonts/digital-7.ttf) format(truetype);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  background-color: #EBC7E6;
+  font-family: "Digital" , sans-serif;
+}
+.heading{
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #7B5F9E;
+  text-decoration: underline;
+}
+.calculator{
+  width: 450px;
+  margin: auto;
+  margin-top: 50px;
+  height: 500px;
+  border : black 2px solid;
+  padding: 20px;
+  border:12px outset #7B5F9E;
+    background:#EBC7E6;
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+button{
+  border:12px outset #7B5F9E;
+    background:#EBC7E6;
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+.operand{
+  color: white;
+  width: 100%;
+  background-color: #A084DC;
+  height: 80px;
+  border: black 2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 26px;
+  margin-bottom: 20px;
+  border:10px outset #7B5F9E;
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+.operand h3{
+  background-color: #A084DC;
+  margin-right: 12px;
+  overflow: hidden;
+}
+.buttons{
+  height: 70px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.buttons button{
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+  height: 70px;
+  background-color: #A084DC;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  margin: auto auto;
+  border: black 2px solid;
+  font-size: 32px;
+}
+.values{
+  
+  display: grid;
+  width: 100%;
+  height: 60% ;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.values button{
+  text-align: center;
+  text-decoration: none;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  background-color: #A084DC;
+  border: none;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  margin: auto auto;
+  border: black 2px solid;
+}
+.values div:hover{
+  background-color: #7B5F9E;
+}
+button:hover{
+  background-color: #7B5F9E;
+}
