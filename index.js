@@ -24,7 +24,7 @@ let fop = document.querySelector('.foperand');
 let sop = document.querySelector('.soperand');
 let operate = document.querySelectorAll('[operator]');
 let equal = document.querySelector('#equal');
-
+let calci = document.querySelector('.calculator');
 
 fop.innerHTML = initial;
 
@@ -79,6 +79,9 @@ for(let i = 0;i<operate.length;i++){
     equalIsIn = false;
     if(operator!= ""){
       firstNum = operateNum(operator);
+      if(firstNum == 0){
+        calci.classList.toggle("active");
+      }
       secondNum = 0;
       operator = String(operate[i].textContent);
       fop.innerHTML = firstNum;
@@ -125,6 +128,9 @@ equal.addEventListener('click', ()=>{
   if(operator != ""){
     equalIsIn = true;
     firstNum = operateNum(operator);
+    if(firstNum == 0){
+      calci.classList.toggle("active");
+    }
     secondNum = 0;
     operator = "";
     fop.innerHTML = "Ans = " + firstNum;

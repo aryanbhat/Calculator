@@ -36,7 +36,9 @@ body {
     background:#EBC7E6;
     -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
     -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    transition: all 1.5s ease;
 }
+
 button{
   border:12px outset #7B5F9E;
     background:#EBC7E6;
@@ -124,4 +126,18 @@ footer{
   margin-right: auto;
   margin-bottom: 2.1%;
   display: flex;
+}
+footer a{
+  text-decoration: none;
+  color: #7B5F9E;
+  font-weight: 600;
+  font-size:30px;
+  transition: all 1s ease;
+}
+footer a:hover{
+  color: #A084DC;
+  transform: rotate(360deg) scale(1.1);
+}
+.active{
+  transform: rotate(360deg);
 }
