@@ -139,5 +139,5 @@ footer a:hover{
   transform: rotate(360deg) scale(1.1);
 }
 .active{
-  transform: rotate(360deg);
+  transform: rotate(3600deg);
 }
